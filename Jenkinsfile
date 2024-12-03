@@ -22,6 +22,7 @@ pipeline {
             steps {
                 script {
                     dockerbuild("notes-app", "praveenadmin", "latest")
+                    echo "Second Time check"
                 }
             }
         }
