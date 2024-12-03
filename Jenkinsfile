@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     gitcheck("https://github.com/praveenadmin/django-notes-app.git", "main")
-                    echo "CHeking PollSCM"
+                    echo "CHeking PollSCM again checking"
                 }
             }
         }
