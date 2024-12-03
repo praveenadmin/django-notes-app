@@ -20,9 +20,9 @@ WORKDIR /app/backend
 # Copy only the necessary artifacts from the build stage
 COPY --from=builder /app/backend /app/backend
 
-# Expose port 8000 to be able to access it from outside the container
-EXPOSE 8000
+# Expose port 8005 to be able to access it from outside the container
+EXPOSE 8005
 
 # Define the command to run the application
-CMD ["python", "/app/backend/manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "/app/backend/manage.py", "runserver", "0.0.0.0:8005"]
 
